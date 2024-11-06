@@ -1,0 +1,98 @@
+/* Reset de styles de base */
+body, h1, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Styles du corps de la page */
+body {
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: lightgray; /* Couleur de fond gris clair */
+    color: black; /* Couleur du texte */
+    padding-bottom: 60px; /* Espace pour le footer */
+}
+
+/* Styles du titre principal */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: black; /* Couleur du texte du titre */
+}
+
+/* Styles de la navigation */
+nav {
+    background-color: dodgerblue; /* Couleur de fond bleu */
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+nav li {
+    margin: 0 15px;
+    flex: 1;
+}
+
+a {
+    cursor: pointer;
+
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+/* Styles du conteneur principal */
+div {
+    max-width: 800px; /* Largeur maximale */
+    margin: 20px auto; /* Centre le conteneur */
+    padding: 20px;
+    background-color: white; /* Couleur de fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Styles du pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: dodgerblue; /* Couleur de fond bleu */
+    color: white; /* Couleur du texte */
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}
+
+/* media queries */
+@media screen and (max-width: 800px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+
+
+    footer {
+        position: bottom;
+    }
+}
